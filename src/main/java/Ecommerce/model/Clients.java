@@ -11,10 +11,10 @@ public class Clients {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
-	int id;                             
+	private int id;                             
 	@Column (unique=true,nullable=false)
-	String email;
-	String nom,prenom,adresse,tel,mdp;
+	private String email;
+	private String nom,prenom,adresse,tel,mdp;
 	
 	public int getId() {
 		return id;
